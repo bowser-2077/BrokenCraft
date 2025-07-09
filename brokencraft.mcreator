@@ -1,0 +1,545 @@
+{
+  "mod_elements": [
+    {
+      "name": "Unique",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unique",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/worldgen/biome/unique.json"
+        ]
+      }
+    },
+    {
+      "name": "Eyecling",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyecling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/client/screens/EyeclingOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "ThethingEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thething_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/procedures/ThethingEntityDiesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Thething",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thething",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/client/renderer/ThethingRenderer.java",
+          "src/main/java/net/mcreator/brokencraft/entity/ThethingEntity.java",
+          "src/main/resources/assets/brokencraft/items/thething_spawn_egg.json",
+          "src/main/resources/data/brokencraft/neoforge/biome_modifier/thething_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "DeadTree",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/worldgen/structure/dead_tree.json",
+          "src/main/resources/data/brokencraft/worldgen/structure_set/dead_tree.json",
+          "src/main/resources/data/brokencraft/worldgen/template_pool/dead_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Adv1",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/adv_1.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/brokencraft/items/amethyst_ingot.json",
+          "src/main/java/net/mcreator/brokencraft/item/AmethystIngotItem.java",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/loot_table/blocks/amethyst_ore.json",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_ore.json",
+          "src/main/resources/data/brokencraft/worldgen/configured_feature/amethyst_ore.json",
+          "src/main/resources/data/brokencraft/worldgen/placed_feature/amethyst_ore.json",
+          "src/main/java/net/mcreator/brokencraft/block/AmethystOreBlock.java",
+          "src/main/resources/assets/brokencraft/models/block/amethyst_ore.json",
+          "src/main/resources/data/brokencraft/neoforge/biome_modifier/amethyst_ore_biome_modifier.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_ore.json",
+          "src/main/resources/assets/brokencraft/blockstates/amethyst_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/loot_table/blocks/amethyst_block.json",
+          "src/main/resources/assets/brokencraft/blockstates/amethyst_block.json",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_block.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_block.json",
+          "src/main/java/net/mcreator/brokencraft/block/AmethystBlockBlock.java",
+          "src/main/resources/assets/brokencraft/models/block/amethyst_block.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_ore_block_recipe.json",
+          "src/main/resources/data/brokencraft/recipe/amethyst_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/recipe/amethyst_block_ore_recipe.json",
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_ore_smelting.json",
+          "src/main/resources/data/brokencraft/recipe/amethyst_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/item/AmethystPickaxeItem.java",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_pickaxe.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/item/AmethystAxeItem.java",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_axe.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/item/AmethystSwordItem.java",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_sword.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/item/AmethystShovelItem.java",
+          "src/main/resources/assets/brokencraft/items/amethyst_shovel.json",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/brokencraft/models/item/amethyst_hoe.json",
+          "src/main/java/net/mcreator/brokencraft/item/AmethystHoeItem.java",
+          "src/main/resources/assets/brokencraft/items/amethyst_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_pickaxe_recipe.json",
+          "src/main/resources/data/brokencraft/recipe/amethyst_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/recipe/amethyst_axe_recipe.json",
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/recipe/amethyst_sword_recipe.json",
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/recipe/amethyst_shovel_recipe.json",
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_hoe_recipe.json",
+          "src/main/resources/data/brokencraft/recipe/amethyst_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/brokencraft/item/AmethystArmorItem.java",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_armor_helmet.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_armor_chestplate.json",
+          "src/main/resources/assets/brokencraft/equipment/amethyst_armor.json",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_armor_boots.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_armor_boots.json",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_armor_leggings.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_armor_leggings.json",
+          "src/main/resources/assets/brokencraft/models/item/amethyst_armor_chestplate.json",
+          "src/main/resources/assets/brokencraft/items/amethyst_armor_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_armor_helmet_recipe.json",
+          "src/main/resources/data/brokencraft/recipe/amethyst_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/recipe/amethyst_armor_chestplate_recipe.json",
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_armor_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_armor_leggings_recipe.json",
+          "src/main/resources/data/brokencraft/recipe/amethyst_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AmethystArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethyst_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/brokencraft/recipe/amethyst_armor_boots_recipe.json",
+          "src/main/resources/data/brokencraft/advancement/recipes/amethyst_armor_boots_recipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "getworse",
+      "files": [
+        "getworse"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "biomesound",
+      "files": [
+        "lullaby"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "whitenoise",
+      "files": [
+        "whitenoise"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:Unique"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:AmethystBlock",
+      "~CUSTOM:AmethystOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:AmethystBlock",
+      "~CUSTOM:AmethystOre"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:AmethystPickaxe"
+    ],
+    "ITEMS:brokencraft:amethyst_pickaxe_repair_items": [
+      "~CUSTOM:AmethystIngot"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:AmethystAxe"
+    ],
+    "ITEMS:brokencraft:amethyst_axe_repair_items": [
+      "~CUSTOM:AmethystIngot"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:AmethystSword"
+    ],
+    "ITEMS:brokencraft:amethyst_sword_repair_items": [
+      "~CUSTOM:AmethystIngot"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AmethystShovel"
+    ],
+    "ITEMS:brokencraft:amethyst_shovel_repair_items": [
+      "~CUSTOM:AmethystIngot"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:AmethystHoe"
+    ],
+    "ITEMS:brokencraft:amethyst_hoe_repair_items": [
+      "~CUSTOM:AmethystIngot"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:AmethystArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:AmethystArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:AmethystArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:AmethystArmor.boots"
+    ],
+    "ITEMS:brokencraft:amethyst_armor_repair_items": [
+      "~CUSTOM:AmethystIngot"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "subtitles.getworse": "",
+      "biome.brokencraft.unique": "flatland",
+      "subtitles.biomesound": "",
+      "item.brokencraft.thething_spawn_egg": "Thething Spawn Egg",
+      "entity.brokencraft.thething": "Thething",
+      "advancements.adv_1.descr": "Enter a dead world",
+      "advancements.adv_1.title": "Once unpon a time",
+      "subtitles.whitenoise": "",
+      "item.brokencraft.amethyst_ingot": "Amethyst",
+      "item.brokencraft.amethyst_ore": "Amethyst Ore",
+      "item.brokencraft.amethyst_block": "Block of Amethyst",
+      "item.brokencraft.amethyst_pickaxe": "Amethyst Pickaxe",
+      "item.brokencraft.amethyst_axe": "Amethyst Axe",
+      "item.brokencraft.amethyst_sword": "Amethyst Sword",
+      "item.brokencraft.amethyst_shovel": "Amethyst Shovel",
+      "item.brokencraft.amethyst_hoe": "Amethyst Hoe",
+      "item.brokencraft.amethyst_armor_boots": "Amethyst Boots",
+      "item.brokencraft.amethyst_armor_leggings": "Amethyst Leggings",
+      "item.brokencraft.amethyst_armor_helmet": "Amethyst Helmet",
+      "item.brokencraft.amethyst_armor_chestplate": "Amethyst Chestplate"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/brokencraft/BrokencraftMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/brokencraft.mixins.json",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/brokencraft/sounds.json",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModSounds.java",
+      "src/main/java/net/mcreator/brokencraft/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModBiomes.java",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModBlocks.java",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModItems.java",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModEntities.java",
+      "src/main/java/net/mcreator/brokencraft/init/BrokencraftModEntityRenderers.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "brokencraft",
+    "modName": "BrokenCraft",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "net.mcreator.brokencraft"
+  },
+  "mcreatorVersion": 202500227613
+}
