@@ -1,0 +1,26 @@
+{
+  "getworse": {
+    "sounds": [
+      {
+        "name": "brokencraft:getworse",
+        "stream": false
+      }
+    ]
+  },
+  "biomesound": {
+    "sounds": [
+      {
+        "name": "brokencraft:lullaby",
+        "stream": false
+      }
+    ]
+  },
+  "whitenoise": {
+    "sounds": [
+      {
+        "name": "brokencraft:whitenoise",
+        "stream": false
+      }
+    ]
+  }
+}

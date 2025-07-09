@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "brokencraft:amethyst_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "brokencraft:amethyst_armor"
+      }
+    ]
+  }
+}
