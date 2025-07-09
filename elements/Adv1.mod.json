@@ -1,0 +1,24 @@
+{
+  "_fv": 79,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Once unpon a time",
+    "achievementDescription": "Enter a dead world",
+    "achievementIcon": {
+      "value": "Blocks.GRASS"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "adventure/adventuring_time"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"226\" y=\"117\"><next><block type=\"biome_entered\"><field name=\"biome\">CUSTOM:Unique</field></block></next></block></xml>"
+  }
+}
