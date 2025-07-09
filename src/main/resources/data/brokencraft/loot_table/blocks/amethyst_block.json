@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "brokencraft:blocks/amethyst_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "brokencraft:amethyst_block"
+        }
+      ]
+    }
+  ]
+}

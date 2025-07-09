@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": "brokencraft:amethyst_ingot",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "brokencraft:amethyst_pickaxe",
+    "count": 1
+  }
+}

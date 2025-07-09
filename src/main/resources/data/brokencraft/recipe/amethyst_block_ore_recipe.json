@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "brokencraft:amethyst_block"
+  ],
+  "result": {
+    "id": "brokencraft:amethyst_ingot",
+    "count": 9
+  }
+}
